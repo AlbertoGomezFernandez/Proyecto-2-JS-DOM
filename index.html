@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto JS DOM</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="./resources/images/My Logo.png" alt="logo">
+      <h1>MyPC.Com</h1>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="filter">
+      <h2>Filtros:</h2>
+
+      <h3>Por vendedores</h3>
+
+      <select name="sellerFilter" id="sellerFilter" title="filter">
+        <option value="seller">---</option>
+      </select>
+
+      <h3>Por precio:</h3>
+
+      <input type="number" placeholder="Precio" name="price" id="price">
+
+      <button type="button" id="priceButton">Buscar</button>
+
+      <button type="button" id="resetButton">Limpiar filtros</button>
+    </section>
+
+    <article class="products">
+      <div class="notFound hide">
+        <p>Lo sentimos no hay producto para este filtro</p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>Alberto Gomez. 2023</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
